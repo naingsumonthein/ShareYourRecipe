@@ -36,7 +36,35 @@ public class User {
         isSelling = selling;
     }
 
+    ///change here Object to Recipe class afterwards
+    public void addToMyFavorite(Object recipe){
+        if(!myFavorite.contains(recipe))
+            this.myFavorite.add(recipe);
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public boolean isSelling() {
+        return isSelling;
+    }
+
+    public ArrayList<Object> getMyFavorite() {
+        return myFavorite;
+    }
 }
 
 
